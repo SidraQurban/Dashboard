@@ -38,10 +38,13 @@ const Login = () => {
           height: "70%",
           width: "100%",
           borderTopLeftRadius: 100,
-          
           paddingTop: 100,
         }}
-      ></View>
+      >
+        <View>
+          <TextInput placeholder="Email" />
+        </View>
+      </View>
     </SafeAreaView>
   );
 };

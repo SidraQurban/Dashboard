@@ -11,7 +11,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "react-native-vector-icons";
 
 const Login = ({ navigation }) => {
-  const [ispassShown, setIsPassShown] = useState(false);
+  const [ispassShown, setIsPassShown] = useState(true);
   return (
     <SafeAreaView
       style={{

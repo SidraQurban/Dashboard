@@ -1,8 +1,9 @@
+// src/screens/SidebarDrawer.js
 import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import { EvilIcons, Entypo } from "react-native-vector-icons";
 
-const Drawer = () => {
+const SidebarDrawer = () => {
   return (
     <View
       style={{
@@ -35,4 +36,4 @@ const Drawer = () => {
   );
 };
 
-export default Drawer;
+export default SidebarDrawer;

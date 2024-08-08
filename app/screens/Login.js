@@ -125,7 +125,7 @@ const Login = ({ navigation }) => {
           </View>
         </View>
         <TouchableOpacity
-          onPress={() => navigation.navigate("dashboard")}
+          onPress={() => navigation.navigate("Drawer")}
           style={{
             backgroundColor: "#dee2e6",
             borderRadius: 18,

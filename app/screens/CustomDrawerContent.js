@@ -12,7 +12,7 @@ import Icon from "react-native-vector-icons/FontAwesome";
 
 const CustomDrawerContent = (props) => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const [activeItem, setActiveItem] = useState("Users");
+  const [activeItem, setActiveItem] = useState("Dashboard");
   const handlePress = (screen) => {
     setActiveItem(screen);
     props.navigation.navigate(screen);

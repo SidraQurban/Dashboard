@@ -3,16 +3,15 @@ import { View, Text, ScrollView } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Home from "./Home";
+import Header from "../components/Header";
+import Card from "../components/Card";
 
 const Dashboard = () => {
   return (
-    <SafeAreaView>
-      <ScrollView>
-        {/* <Home /> */}
-        <Text>Sidebar</Text>
-        <Text>Card</Text>
-      </ScrollView>
-    </SafeAreaView>
+    <ScrollView>
+      <Header />
+      <Card />
+    </ScrollView>
   );
 };
 

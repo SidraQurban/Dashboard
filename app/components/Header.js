@@ -7,7 +7,6 @@ const Header = () => {
     <>
       <View
         style={{
-          top: 200,
           width: "100%",
           height: 200,
           backgroundColor: "#234d51",

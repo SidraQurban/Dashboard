@@ -1,10 +1,15 @@
 import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
-import React from "react";
-import { EvilIcons, Entypo, FontAwesome6 } from "react-native-vector-icons";
+import React, { useState } from "react";
+import {
+  EvilIcons,
+  FontAwesome6,
+  MaterialIcons,
+} from "react-native-vector-icons";
 
 const Header = () => {
   return (
     <>
+      {/* Header component */}
       <View
         style={{
           width: "100%",

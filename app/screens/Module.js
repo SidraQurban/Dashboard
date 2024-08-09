@@ -1,14 +1,16 @@
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, ScrollView } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Header from "../components/Header";
+import ModuleCard from "../components/ModuleCard";
 import { useNavigation } from "@react-navigation/native";
+import { ModulesData } from "../Constant";
 
 const Module = () => {
   const navigation = useNavigation();
 
   return (
-    <SafeAreaView>
+    <ScrollView>
       <Header />
       <Text
         style={{
@@ -29,7 +31,8 @@ const Module = () => {
       <TouchableOpacity
         onPress={() => navigation.navigate("Dashboard")}
         style={{
-          backgroundColor: "#0C2527",
+          marginTop: -7,
+          backgroundColor: "#234d51",
           borderRadius: 50,
           margin: 10,
           width: 80,
@@ -46,7 +49,17 @@ const Module = () => {
           Back
         </Text>
       </TouchableOpacity>
-    </SafeAreaView>
+
+      {ModulesData.map((card, index) => (
+        <ModuleCard
+          key={index}
+          title={card.title}
+          modules={card.modules}
+          color={card.color}
+          createdDate={card.createdDate}
+        />
+      ))}
+    </ScrollView>
   );
 };
 

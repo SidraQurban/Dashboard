@@ -1,17 +1,17 @@
+// src/screens/Home.js
 import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
-import { MaterialIcons } from "react-native-vector-icons";
 import { useNavigation } from "@react-navigation/native";
 
-const Card = ({ title, modules, color, createdDate }) => {
+const ModuleCard = ({ title, modules, color, createdDate }) => {
   const navigation = useNavigation();
 
   return (
     <View>
       <TouchableOpacity
-        onPress={() => navigation.navigate("Module")}
+        // onPress={() => navigation.navigate("Module", { title, modules })}
         style={{
-          height: 200,
+          height: 160,
           width: "90%",
           marginLeft: 18,
           marginRight: 20,
@@ -21,9 +21,9 @@ const Card = ({ title, modules, color, createdDate }) => {
           padding: 20,
         }}
       >
-        <View style={{ flexDirection: "row", justifyContent: "flex-end" }}>
-          <MaterialIcons name="add-chart" size={25} color="#343a40" />
-        </View>
+        <View
+          style={{ flexDirection: "row", justifyContent: "flex-end" }}
+        ></View>
         <View style={{ alignItems: "center", marginTop: 10 }}>
           <Text
             style={{
@@ -68,4 +68,4 @@ const Card = ({ title, modules, color, createdDate }) => {
   );
 };
 
-export default Card;
+export default ModuleCard;

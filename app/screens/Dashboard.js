@@ -32,6 +32,8 @@ const Dashboard = () => {
           modules={card.modules}
           color={card.color}
           createdDate={card.createdDate}
+          navigateTo={card.navigateTo}
+          isEmpty={card.isEmpty}
         />
       ))}
     </ScrollView>

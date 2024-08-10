@@ -3,13 +3,13 @@ import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
 
-const ModuleCard = ({ title, modules, color, createdDate }) => {
+const ModuleCard = ({ title, color, name }) => {
   const navigation = useNavigation();
 
   return (
     <View>
       <TouchableOpacity
-        // onPress={() => navigation.navigate("Module", { title, modules })}
+        onPress={() => navigation.navigate("Logs")}
         style={{
           height: 160,
           width: "90%",
@@ -24,7 +24,7 @@ const ModuleCard = ({ title, modules, color, createdDate }) => {
         <View
           style={{ flexDirection: "row", justifyContent: "flex-end" }}
         ></View>
-        <View style={{ alignItems: "center", marginTop: 10 }}>
+        <View style={{ alignItems: "center", marginTop: 25 }}>
           <Text
             style={{
               fontSize: 30,
@@ -34,24 +34,15 @@ const ModuleCard = ({ title, modules, color, createdDate }) => {
           >
             {title}
           </Text>
-          <Text
-            style={{
-              fontSize: 20,
-              color: "blue",
-              marginTop: 10,
-            }}
-          >
-            Total Modules {modules}
-          </Text>
         </View>
         <View
           style={{
             flexDirection: "row",
-            marginTop: 30,
+            marginTop: 36,
             justifyContent: "center",
           }}
         >
-          <Text style={{ fontSize: 15 }}>Created Date:</Text>
+          <Text style={{ fontSize: 15 }}>Head Name: </Text>
           <Text
             style={{
               fontSize: 15,
@@ -60,7 +51,7 @@ const ModuleCard = ({ title, modules, color, createdDate }) => {
               color: "#6c757d",
             }}
           >
-            {createdDate}
+            {name}
           </Text>
         </View>
       </TouchableOpacity>

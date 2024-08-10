@@ -1,15 +1,23 @@
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, Alert } from "react-native";
 import React from "react";
 import { MaterialIcons } from "react-native-vector-icons";
 import { useNavigation } from "@react-navigation/native";
 
-const Card = ({ title, modules, color, createdDate }) => {
+const Card = ({ title, modules, color, createdDate, navigateTo, isEmpty }) => {
   const navigation = useNavigation();
+
+  const handlePress = () => {
+    if (isEmpty) {
+      Alert.alert("Notice", `The ${title} card is empty.`);
+    } else if (navigateTo) {
+      navigation.navigate(navigateTo);
+    }
+  };
 
   return (
     <View>
       <TouchableOpacity
-        onPress={() => navigation.navigate("Module")}
+        onPress={handlePress}
         style={{
           height: 200,
           width: "90%",

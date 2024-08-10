@@ -1,6 +1,5 @@
 import { View, Text, TouchableOpacity, ScrollView } from "react-native";
 import React from "react";
-import { SafeAreaView } from "react-native-safe-area-context";
 import Header from "../components/Header";
 import ModuleCard from "../components/ModuleCard";
 import { useNavigation } from "@react-navigation/native";
@@ -42,7 +41,7 @@ const Module = () => {
           style={{
             color: "#fff",
             fontSize: 19,
-            alignItems: "center",
+            alignSelf: "center",
             padding: 10,
           }}
         >
@@ -54,9 +53,8 @@ const Module = () => {
         <ModuleCard
           key={index}
           title={card.title}
-          modules={card.modules}
           color={card.color}
-          createdDate={card.createdDate}
+          name={card.name}
         />
       ))}
     </ScrollView>

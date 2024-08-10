@@ -7,7 +7,6 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 
 import Login from "../screens/Login";
-import Home from "../screens/Home";
 import Dashboard from "../screens/Dashboard";
 import CustomDrawerContent from "../screens/CustomDrawerContent";
 import Users from "../screens/Users";
@@ -50,6 +49,7 @@ const AppNavigator = () => {
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Drawer" component={DrawerNavigator} />
         <Stack.Screen name="Module" component={Module} />
+        <Stack.Screen name="Logs" component={Logs} />
       </Stack.Navigator>
     </NavigationContainer>
   );

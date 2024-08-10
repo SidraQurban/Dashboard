@@ -1,11 +1,17 @@
 import { View, Text, Alert } from "react-native";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Feather } from "react-native-vector-icons";
 import Table from "../components/Table";
 import { userDataTable as initialUserDataTable } from "../Constant";
 
-const Users = () => {
+const Users = ({ route }) => {
   const [userDataTable, setUserDataTable] = useState(initialUserDataTable);
+
+  useEffect(() => {
+    if (route.params?.newUser) {
+      setUserDataTable((prevData) => [...prevData, route.params.newUser]);
+    }
+  }, [route.params?.newUser]);
 
   const handleDelete = (index) => {
     Alert.alert(
@@ -28,6 +34,7 @@ const Users = () => {
       ]
     );
   };
+
   return (
     <View>
       <View

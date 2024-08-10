@@ -11,6 +11,7 @@ const Table = ({ data, onDelete }) => {
         borderRadius: 30,
         marginLeft: 20,
         paddingHorizontal: 10,
+        height: "100%",
         width: "100%",
       }}
     >

@@ -1,15 +1,25 @@
 import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import {
-  Ionicons,
   EvilIcons,
   MaterialCommunityIcons,
-  MaterialIcons,
   Feather,
+  MaterialIcons,
 } from "react-native-vector-icons";
 import { useNavigation } from "@react-navigation/native";
+import React, { useState } from "react";
 
-const RegisterUser = () => {
+const RegisterUser = ({ route }) => {
   const navigation = useNavigation();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [role, setRole] = useState("");
+  const [company, setCompany] = useState("");
+
+  const handleSave = () => {
+    const newUser = { name, email, password, role, company };
+    navigation.navigate("Users", { newUser }); // Pass the new user data back to the Users screen
+  };
 
   return (
     <View
@@ -44,8 +54,8 @@ const RegisterUser = () => {
           <TextInput
             placeholder="User Name *"
             placeholderTextColor="#adb5bd"
-            keyboardType="email-address"
             style={{ width: "100%", marginLeft: "10%", fontSize: 17 }}
+            onChangeText={setName}
           />
         </View>
       </View>
@@ -70,6 +80,7 @@ const RegisterUser = () => {
             placeholder="EMAIL *"
             placeholderTextColor="#adb5bd"
             style={{ width: "100%", marginLeft: "10%", fontSize: 17 }}
+            onChangeText={setEmail}
           />
         </View>
       </View>
@@ -94,6 +105,8 @@ const RegisterUser = () => {
             placeholder="Password *"
             placeholderTextColor="#adb5bd"
             style={{ width: "100%", marginLeft: "10%", fontSize: 17 }}
+            secureTextEntry
+            onChangeText={setPassword}
           />
         </View>
       </View>
@@ -116,14 +129,13 @@ const RegisterUser = () => {
           }}
         >
           <TextInput
-            placeholder="Select Role "
+            placeholder="Select Role"
             placeholderTextColor="#adb5bd"
             style={{ width: "100%", marginLeft: "10%", fontSize: 17 }}
+            onChangeText={setRole}
           />
         </View>
       </View>
-      {/* <MaterialIcons name="add-chart" size={25} color="#343a40" /> */}
-
       <MaterialIcons
         name="add-chart"
         size={30}
@@ -142,9 +154,10 @@ const RegisterUser = () => {
           }}
         >
           <TextInput
-            placeholder="Select Company "
+            placeholder="Select Company"
             placeholderTextColor="#adb5bd"
             style={{ width: "100%", marginLeft: "10%", fontSize: 17 }}
+            onChangeText={setCompany}
           />
         </View>
       </View>
@@ -164,7 +177,7 @@ const RegisterUser = () => {
           }}
         >
           <TouchableOpacity
-            onPress={() => navigation.navigate("Dashboard")}
+            onPress={() => navigation.goBack()} // Go back without saving
             style={{
               backgroundColor: "grey",
               width: 70,
@@ -174,17 +187,10 @@ const RegisterUser = () => {
               alignItems: "center",
             }}
           >
-            <Text
-              style={{
-                color: "#fff",
-                fontSize: 15,
-              }}
-            >
-              CLOSE
-            </Text>
+            <Text style={{ color: "#fff", fontSize: 15 }}>CLOSE</Text>
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={() => console.log("Save pressed")}
+            onPress={handleSave} // Save the new user and navigate back
             style={{
               backgroundColor: "green",
               width: 70,
@@ -195,14 +201,7 @@ const RegisterUser = () => {
               marginLeft: 15,
             }}
           >
-            <Text
-              style={{
-                color: "#fff",
-                fontSize: 15,
-              }}
-            >
-              SAVE
-            </Text>
+            <Text style={{ color: "#fff", fontSize: 15 }}>SAVE</Text>
           </TouchableOpacity>
         </View>
       </View>

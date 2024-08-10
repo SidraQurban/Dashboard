@@ -89,3 +89,36 @@ export const ModulesData = [
     name: "kong",
   },
 ];
+
+export const userDataTable = [
+  {
+    name: "umer",
+    email: "umer1@gmail.com",
+    role: "admin",
+    company: "texas",
+  },
+  {
+    name: "umer",
+    email: "umer123@gmail.com",
+    role: "superadmin",
+    company: "texas",
+  },
+  {
+    name: "Adnan Hussain",
+    email: "adnanhussain7995@gmail.com",
+    role: "user",
+    company: "texas",
+  },
+  {
+    name: "Umer",
+    email: "Umer12@gmail.com",
+    role: "admin",
+    company: "texas",
+  },
+  {
+    name: "new customer",
+    email: "new@gmail.com",
+    role: "user",
+    company: "texas",
+  },
+];

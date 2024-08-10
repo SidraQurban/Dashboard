@@ -9,7 +9,7 @@ const ModuleCard = ({ title, color, name }) => {
   return (
     <View>
       <TouchableOpacity
-        onPress={() => navigation.navigate("Logs")}
+        onPress={() => navigation.navigate("Logs", { title })}
         style={{
           height: 160,
           width: "90%",

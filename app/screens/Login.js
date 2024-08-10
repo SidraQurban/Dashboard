@@ -20,7 +20,7 @@ const Login = ({ navigation }) => {
         backgroundColor: "#0C2527",
       }}
     >
-      <View style={{ paddingBottom: 90, alignItems: "center" }}>
+      <View style={{ paddingBottom: "20%", alignItems: "center" }}>
         <View style={{ flexDirection: "row", alignItems: "center" }}>
           <Image
             source={require("../../assets/logo.png")}

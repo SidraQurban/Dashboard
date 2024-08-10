@@ -15,6 +15,7 @@ import AddCompany from "../screens/AddCompany";
 import AddModule from "../screens/AddModule";
 import Module from "../screens/Module";
 import Logout from "../screens/Logout";
+import Logs from "../screens/Logs";
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -39,6 +40,7 @@ const DrawerNavigator = () => (
     <Drawer.Screen name="Add Company" component={AddCompany} />
     <Drawer.Screen name="Add Module" component={AddModule} />
     <Drawer.Screen name="Module" component={Module} />
+    <Drawer.Screen name="Logs" component={Logs} />
   </Drawer.Navigator>
 );
 

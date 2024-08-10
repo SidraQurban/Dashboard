@@ -12,7 +12,7 @@ export const cardData = [
     modules: 5,
     color: "green",
     createdDate: "July 21, 2024 2:43",
-    isEmpty: true,
+    isEmpty: false,
   },
   {
     title: "Los Angeles",

@@ -72,6 +72,14 @@ const Table = ({ data, onDelete }) => {
             ))}
           </DataTable>
         </ScrollView>
+        {/* Additional vertical content */}
+        <View style={{ marginTop: 20 }}>
+          <Text>More content goes here...</Text>
+          {/* Add more content to ensure vertical scrolling */}
+          {Array.from({ length: 20 }, (_, i) => (
+            <Text key={i}>Additional Content Line {i + 1}</Text>
+          ))}
+        </View>
       </ScrollView>
     </View>
   );

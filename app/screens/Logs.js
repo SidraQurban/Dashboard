@@ -1,7 +1,9 @@
 import { View, Text } from "react-native";
 import React from "react";
-import { Entypo, AntDesign } from "react-native-vector-icons";
+import { Entypo } from "react-native-vector-icons";
 import { useRoute } from "@react-navigation/native";
+import LogsTable from "../components/LogsTable";
+import { logsDataTable } from "../Constant";
 
 const Logs = () => {
   const route = useRoute();
@@ -34,6 +36,7 @@ const Logs = () => {
           </Text>
         </View>
       </View>
+      <LogsTable data={logsDataTable} />
     </View>
   );
 };

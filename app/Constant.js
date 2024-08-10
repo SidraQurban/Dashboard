@@ -122,3 +122,36 @@ export const userDataTable = [
     company: "texas",
   },
 ];
+
+export const logsDataTable = [
+  {
+    company: "texassss",
+    module: "engineering",
+    createdOn: "05/08/2024 04:14 pm",
+  },
+  {
+    company: "texas",
+    module: "engineering",
+    createdOn: "05/08/2024 04:02 pm",
+  },
+  {
+    company: "texas",
+    module: "engineering",
+    createdOn: "05/08/2024 04:00 pm",
+  },
+  {
+    company: "texas",
+    module: "engineering",
+    createdOn: "05/08/2024 03:58 pm",
+  },
+  {
+    company: "texas",
+    module: "engineering",
+    createdOn: "31/07/2024 12:02 pm",
+  },
+  {
+    company: "texas",
+    module: "engineering",
+    createdOn: "28/07/2024 01:14 pm",
+  },
+];

@@ -5,30 +5,30 @@
  * React Native Components: Text, View, TouchableOpacity, Image, SafeAreaView, TextInput, Alert
  * Navigation: react-navigation, route, Drawer, Stack
  * UI: react-native-vector-icons
- *Hooks: useState, useEffect
- *Table Handling: DataTable
- *Props Handling: props
- *Styling: Custom styles
+ * Hooks: useState, useEffect
+ * Table Handling: DataTable
+ * Props Handling: props
+ * Styling: Custom styles
 
  **App Features**
 
 Login Page:
- .Users log in using their email and password.
- .Option to show or hide the password.
- .A login button to submit credentials.
+ * Users log in using their email and password.
+ * Option to show or hide the password.
+ * A login button to submit credentials.
  <img width="197" alt="login" src="https://github.com/user-attachments/assets/9b829029-5fef-433a-a8e2-c0355e9e6ee2">
 
  Dashboard:
- .Includes a header with a sidebar and a logout option.
- .Displays static user information: name, role, and company logo.
- .Shows a list of companies with the total number of modules and creation date.
- .Clicking on a company card navigates to the Modules Page.
+ * Includes a header with a sidebar and a logout option.
+ * Displays static user information: name, role, and company logo.
+ *Shows a list of companies with the total number of modules and creation date.
+ * Clicking on a company card navigates to the Modules Page.
 <img width="200" alt="dashboard" src="https://github.com/user-attachments/assets/82affe0c-152b-4880-820a-ff6238156d9b">
 
 Modules Page:
- .Displays module cards with the module name and head of the module.
- .Selecting a specific module navigates to the Logo Table Page.
-  .Includes a back button to return to the dashboard.
+ * Displays module cards with the module name and head of the module.
+ * Selecting a specific module navigates to the Logo Table Page.
+  * Includes a back button to return to the dashboard.
 <img width="206" alt="module" src="https://github.com/user-attachments/assets/c480cbff-571d-4c57-a36a-dc0b0358432e">
 
 Logo Table Page:

@@ -1,10 +1,5 @@
-import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
-import React, { useState } from "react";
-import {
-  EvilIcons,
-  FontAwesome6,
-  MaterialIcons,
-} from "react-native-vector-icons";
+import { View, Text } from "react-native";
+import { EvilIcons, FontAwesome6 } from "react-native-vector-icons";
 
 const Header = () => {
   return (

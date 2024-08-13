@@ -1,11 +1,5 @@
 import { View, Text, TextInput, TouchableOpacity } from "react-native";
-import {
-  Ionicons,
-  EvilIcons,
-  MaterialCommunityIcons,
-  MaterialIcons,
-  Feather,
-} from "react-native-vector-icons";
+import { MaterialIcons } from "react-native-vector-icons";
 import { useNavigation } from "@react-navigation/native";
 
 const AddCompany = () => {
@@ -63,7 +57,7 @@ const AddCompany = () => {
           }}
         >
           <TouchableOpacity
-            onPress={() => navigation.navigate("Dashboard")}
+            onPress={() => navigation.goBack()}
             style={{
               backgroundColor: "grey",
               width: 70,
@@ -83,9 +77,9 @@ const AddCompany = () => {
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={() => console.log("Save pressed")}
+            onPress={() => navigation.goBack()}
             style={{
-              backgroundColor: "green",
+              backgroundColor: "#0C2527",
               width: 70,
               height: 40,
               borderRadius: 20,

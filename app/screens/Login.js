@@ -1,11 +1,4 @@
-import {
-  Button,
-  Image,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View,
-} from "react-native";
+import { Image, Text, TextInput, TouchableOpacity, View } from "react-native";
 import React, { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "react-native-vector-icons";
@@ -127,7 +120,7 @@ const Login = ({ navigation }) => {
         <TouchableOpacity
           onPress={() => navigation.navigate("Drawer")}
           style={{
-            backgroundColor: "#dee2e6",
+            backgroundColor: "#0C2527",
             borderRadius: 18,
             paddingVertical: 18,
             width: "80%",
@@ -138,7 +131,7 @@ const Login = ({ navigation }) => {
         >
           <Text
             style={{
-              color: "#adb5bd",
+              color: "#fff",
               fontSize: 20,
             }}
           >

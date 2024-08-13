@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, ScrollView } from "react-native";
+import { Text, TouchableOpacity, ScrollView } from "react-native";
 import React from "react";
 import Header from "../components/Header";
 import ModuleCard from "../components/ModuleCard";

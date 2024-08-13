@@ -9,10 +9,10 @@ export const cardData = [
   },
   {
     title: "New York",
-    modules: 5,
+    modules: 0,
     color: "green",
     createdDate: "July 21, 2024 2:43",
-    isEmpty: false,
+    isEmpty: true,
   },
   {
     title: "Los Angeles",
@@ -128,6 +128,7 @@ export const logsDataTable = [
     company: "texassss",
     module: "engineering",
     createdOn: "05/08/2024 04:14 pm",
+    videoUrl: "https://www.youtube.com/watch?v=LjZGYQLL6R8",
   },
   {
     company: "texas",

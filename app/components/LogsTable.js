@@ -1,4 +1,4 @@
-import { ScrollView, View, Text } from "react-native";
+import { ScrollView, View, Text, TouchableOpacity } from "react-native";
 import { useRoute } from "@react-navigation/native";
 import { DataTable } from "react-native-paper";
 import { Ionicons, Entypo } from "react-native-vector-icons";
@@ -53,9 +53,7 @@ const LogsTable = ({ data }) => {
                     <Text style={{ fontSize: 16 }}>{item.company}</Text>
                   </DataTable.Cell>
                   <DataTable.Cell style={{ width: 200 }}>
-                    <Text
-                      style={{ fontSize: 16 }}
-                    >{`${item.module} ${title}`}</Text>
+                    <Text style={{ fontSize: 16 }}>{title}</Text>
                   </DataTable.Cell>
                   <DataTable.Cell style={{ width: 200 }}>
                     <Entypo name="back-in-time" size={25} color="black" />
@@ -64,7 +62,9 @@ const LogsTable = ({ data }) => {
                     <Text style={{ fontSize: 16 }}>{item.createdOn}</Text>
                   </DataTable.Cell>
                   <DataTable.Cell style={{ width: 100 }}>
-                    <Ionicons name="eye-outline" size={25} />
+                    <TouchableOpacity>
+                      <Ionicons name="eye-outline" size={25} />
+                    </TouchableOpacity>
                   </DataTable.Cell>
                 </DataTable.Row>
               ))}
@@ -73,9 +73,8 @@ const LogsTable = ({ data }) => {
         </ScrollView>
 
         <View style={{ marginTop: 20 }}>
-          <Text>More content goes here...</Text>
           {Array.from({ length: 20 }, (_, i) => (
-            <Text key={i}>Additional Content Line {i + 1}</Text>
+            <Text key={i}></Text>
           ))}
         </View>
       </ScrollView>

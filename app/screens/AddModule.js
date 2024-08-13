@@ -1,11 +1,5 @@
 import { View, Text, TextInput, TouchableOpacity } from "react-native";
-import {
-  Ionicons,
-  EvilIcons,
-  MaterialCommunityIcons,
-  MaterialIcons,
-  Feather,
-} from "react-native-vector-icons";
+import { EvilIcons, MaterialIcons, Feather } from "react-native-vector-icons";
 import { useNavigation } from "@react-navigation/native";
 
 const AddModule = () => {
@@ -98,9 +92,6 @@ const AddModule = () => {
           />
         </View>
       </View>
-
-      {/* <MaterialIcons name="add-chart" size={25} color="#343a40" /> */}
-
       <View
         style={{
           flex: 1,
@@ -137,9 +128,9 @@ const AddModule = () => {
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={() => console.log("Save pressed")}
+            onPress={() => navigation.goBack()}
             style={{
-              backgroundColor: "green",
+              backgroundColor: "#0C2527",
               width: 70,
               height: 40,
               borderRadius: 20,

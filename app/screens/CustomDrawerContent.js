@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { View, Text, TouchableOpacity, Image } from "react-native";
-import { DrawerContentScrollView, DrawerItem } from "@react-navigation/drawer";
+import { DrawerContentScrollView } from "@react-navigation/drawer";
 import {
   MaterialCommunityIcons,
   MaterialIcons,

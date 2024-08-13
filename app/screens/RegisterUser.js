@@ -177,7 +177,7 @@ const RegisterUser = ({ route }) => {
           }}
         >
           <TouchableOpacity
-            onPress={() => navigation.goBack()} // Go back without saving
+            onPress={() => navigation.goBack()}
             style={{
               backgroundColor: "grey",
               width: 70,
@@ -190,9 +190,9 @@ const RegisterUser = ({ route }) => {
             <Text style={{ color: "#fff", fontSize: 15 }}>CLOSE</Text>
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={handleSave} // Save the new user and navigate back
+            onPress={handleSave}
             style={{
-              backgroundColor: "green",
+              backgroundColor: "#0C2527",
               width: 70,
               height: 40,
               borderRadius: 20,

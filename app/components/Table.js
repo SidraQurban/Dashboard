@@ -65,7 +65,11 @@ const Table = ({ data, onDelete }) => {
                 </DataTable.Cell>
                 <DataTable.Cell style={{ width: 100 }}>
                   <TouchableOpacity onPress={() => onDelete(index)}>
-                    <MaterialCommunityIcons name="delete-outline" size={25} />
+                    <MaterialCommunityIcons
+                      name="delete-outline"
+                      size={25}
+                      color="#d62828"
+                    />
                   </TouchableOpacity>
                 </DataTable.Cell>
               </DataTable.Row>
@@ -74,10 +78,9 @@ const Table = ({ data, onDelete }) => {
         </ScrollView>
         {/* Additional vertical content */}
         <View style={{ marginTop: 20 }}>
-          <Text>More content goes here...</Text>
           {/* Add more content to ensure vertical scrolling */}
           {Array.from({ length: 20 }, (_, i) => (
-            <Text key={i}>Additional Content Line {i + 1}</Text>
+            <Text key={i}></Text>
           ))}
         </View>
       </ScrollView>

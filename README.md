@@ -34,8 +34,8 @@ Modules Page:
 <img width="206" alt="module" src="https://github.com/user-attachments/assets/c480cbff-571d-4c57-a36a-dc0b0358432e">
 <br> 
 
-Logo Table Page:
- * Provides details of the selected module: company name, module name, logos, date, and a video icon.
+Logs Table Page:
+ * Provides details of the selected module: company name, module name, logs, date, and a video icon.
 <img width="194" alt="logs" src="https://github.com/user-attachments/assets/29cc45b4-cb46-4a9c-96df-889c6354e120">
 <img width="198" alt="logs2" src="https://github.com/user-attachments/assets/bb925836-d2f8-40b1-9dd8-9bc4aac882ee">
 <img width="195" alt="logs 3" src="https://github.com/user-attachments/assets/32c3bcef-8315-4929-aaa3-f4ddd874245a">

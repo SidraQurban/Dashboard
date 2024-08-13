@@ -1,4 +1,4 @@
-**Project Overview: Dashboard Application**
+**Dashboard Application**
 
  **Technologies & Components Used:**
  
@@ -63,9 +63,11 @@ Add Button:
 <img width="232" alt="user 5" src="https://github.com/user-attachments/assets/4ff8ffb7-07cf-4a4f-99cb-f87383e281ec">
 
 Add Company:
+return
 <img width="215" alt="add company" src="https://github.com/user-attachments/assets/c4bf068a-1900-466a-b483-2698659c1795">
 
 Add Module:
+return
 <img width="210" alt="add module" src="https://github.com/user-attachments/assets/fd2b498f-9a0c-49d2-97c9-2414925d93c6">
 
 Logout:

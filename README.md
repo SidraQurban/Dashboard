@@ -18,7 +18,7 @@ Login Page:
  * A login button to submit credentials.
  <img width="197" alt="login" src="https://github.com/user-attachments/assets/9b829029-5fef-433a-a8e2-c0355e9e6ee2">
  <br> 
-<br> 
+
  Dashboard:
  * Includes a header with a sidebar and a logout option.
  * Displays static user information: name, role, and company logo.
@@ -26,7 +26,7 @@ Login Page:
  * Clicking on a company card navigates to the Modules Page.
 <img width="200" alt="dashboard" src="https://github.com/user-attachments/assets/82affe0c-152b-4880-820a-ff6238156d9b">
 <br> 
-<br> 
+
 Modules Page:
  * Displays module cards with the module name and head of the module.
  * Selecting a specific module navigates to the Logo Table Page.

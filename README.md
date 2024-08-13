@@ -16,7 +16,7 @@ Login Page:
  * Users log in using their email and password.
  * Option to show or hide the password.
  * A login button to submit credentials.
- <img width="197" alt="login" src="https://github.com/user-attachments/assets/9b829029-5fef-433a-a8e2-c0355e9e6ee2">
+<img width="199" alt="loginscreen" src="https://github.com/user-attachments/assets/67c48c96-61da-42b7-bca8-8fe1f157f32d">
  <br> 
 
  Dashboard:

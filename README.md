@@ -22,7 +22,7 @@ Login Page:
  Dashboard:
  * Includes a header with a sidebar and a logout option.
  * Displays static user information: name, role, and company logo.
- *Shows a list of companies with the total number of modules and creation date.
+ * Shows a list of companies with the total number of modules and creation date.
  * Clicking on a company card navigates to the Modules Page.
 <img width="200" alt="dashboard" src="https://github.com/user-attachments/assets/82affe0c-152b-4880-820a-ff6238156d9b">
 <br> 

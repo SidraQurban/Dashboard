@@ -2,9 +2,9 @@
 
  **Technologies & Components Used:**
  
- *React Native Components: Text, View, TouchableOpacity, Image, SafeAreaView, TextInput, Alert
- *Navigation: react-navigation, route, Drawer, Stack
- *UI: react-native-vector-icons
+ * React Native Components: Text, View, TouchableOpacity, Image, SafeAreaView, TextInput, Alert
+ * Navigation: react-navigation, route, Drawer, Stack
+ * UI: react-native-vector-icons
  *Hooks: useState, useEffect
  *Table Handling: DataTable
  *Props Handling: props

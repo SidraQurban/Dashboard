@@ -33,20 +33,20 @@ Modules Page:
  * Includes a back button to return to the dashboard.
 <img width="206" alt="module" src="https://github.com/user-attachments/assets/c480cbff-571d-4c57-a36a-dc0b0358432e">
 <br> 
-<br> 
+
 Logo Table Page:
  * Provides details of the selected module: company name, module name, logos, date, and a video icon.
 <img width="194" alt="logs" src="https://github.com/user-attachments/assets/29cc45b4-cb46-4a9c-96df-889c6354e120">
 <img width="198" alt="logs2" src="https://github.com/user-attachments/assets/bb925836-d2f8-40b1-9dd8-9bc4aac882ee">
 <img width="195" alt="logs 3" src="https://github.com/user-attachments/assets/32c3bcef-8315-4929-aaa3-f4ddd874245a">
 <br> 
-<br> 
+
 Sidebar:
  * Accessible via a hamburger menu icon.
  * Displays the app logo, name, and a "Go Back" toggle.
 <img width="208" alt="sidebar" src="https://github.com/user-attachments/assets/fcd949c6-fee4-4488-a8ff-f56be26b7727">
 <br>
-<br> 
+
 User Management Screen:
  * Lists user details: name, email, company, and a delete action.
  * Deleting a user triggers an alert with "Agree" and "Disagree" options:
@@ -56,29 +56,29 @@ User Management Screen:
 <img width="212" alt="user2" src="https://github.com/user-attachments/assets/e29e07f7-4dda-4185-a700-ef3c1f403b4b">
 <img width="215" alt="user3" src="https://github.com/user-attachments/assets/d11a2a70-98b0-43f7-9f09-6a074d17714e">
 <br> 
-<br> 
-   Register User:
-   * Input fields: user name, email, password, role, and company.
-   * "Cancel" button navigates back to the dashboard.
-   * "Save" button adds the user information to the Users screen.
+
+Register User:
+ * Input fields: user name, email, password, role, and company.
+ * "Cancel" button navigates back to the dashboard.
+ * "Save" button adds the user information to the Users screen.
 <img width="244" alt="register user" src="https://github.com/user-attachments/assets/ef5335b8-ade3-4dcc-9ece-cb2d78bc5e27">
 <img width="222" alt="register user 2" src="https://github.com/user-attachments/assets/47a61e65-3222-48da-82fa-85cb8375c02f">
 <img width="220" alt="user4" src="https://github.com/user-attachments/assets/287cf9e1-3d3f-4b0c-b4f4-6785124e4694">
 <img width="232" alt="user 5" src="https://github.com/user-attachments/assets/4ff8ffb7-07cf-4a4f-99cb-f87383e281ec">
 <br> 
-<br> 
+ 
 Add Company:
 <br> 
 <br> 
 <img width="215" alt="add company" src="https://github.com/user-attachments/assets/c4bf068a-1900-466a-b483-2698659c1795">
 <br> 
-<br> 
+ 
 Add Module:
 <br> 
 <br> 
 <img width="210" alt="add module" src="https://github.com/user-attachments/assets/fd2b498f-9a0c-49d2-97c9-2414925d93c6">
 <br> 
-<br> 
+
 Logout:
  * Navigate to login page
 <img width="215" alt="logout" src="https://github.com/user-attachments/assets/941f6513-5159-45c2-9722-cec0918caf62">
